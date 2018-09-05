@@ -25,6 +25,7 @@ npm start
 
 ##### See live demo:
 ```bash
-heroku git:clone -a ?????????
+heroku git:clone -a nameless-citadel-10646
+https://nameless-citadel-10646.herokuapp.com/my-app
 
 ```
