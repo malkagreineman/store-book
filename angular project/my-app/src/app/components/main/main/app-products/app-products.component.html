@@ -1,0 +1,9 @@
+<input type="text" (blur)="search($event.target.value)" name="input">search
+<h1>All books</h1>
+<div id="books">
+  <table>
+    <tr *ngFor="let book of filterList">
+    <app-product-preview [book]="book"></app-product-preview>
+    </tr>
+  </table>
+</div>

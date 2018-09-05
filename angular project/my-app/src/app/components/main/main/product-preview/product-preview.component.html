@@ -1,0 +1,9 @@
+<div id="container">
+  <div class="product-details">
+    <h1>{{book['volumeInfo'].title}}</h1>
+    <p class="information">{{book['volumeInfo'].description}}</p>
+  </div>
+  <div class="category">
+    <a routerLink="productsDetails/{{book.volumeInfo.title}}">details</a>
+  </div>
+</div>

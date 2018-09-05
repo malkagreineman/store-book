@@ -1,0 +1,23 @@
+
+<div class="jumbotron" id="nav">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+                <a routerLink="/myAccount"  class="navlink"> my-account </a>
+                <a routerLink="/products"  class="navlink"> products </a>
+                <a routerLink="/myCart" class="navlink" *ngIf="user"> my cart </a>
+                <!-- {{user.userName}} -->
+               
+                    <p *ngIf="user">Hello {{user.userName}}</p>
+                    <p *ngIf="!user">Hello guest</p>
+                 <img *ngIf="user" src="https://i2.cdn.turner.com/cnnnext/dam/assets/140926165711-john-sutter-profile-image-large-169.jpg" style="height: 50px;width: 50px;" alt=" " /> 
+                 <img *ngIf="!user" src="http://static.eharmony.com/blog/wp-content/uploads/2010/04/eHarmony-Blog-profile-picture.jpg" style="height: 50px;width: 50px;" alt=" " /> 
+
+            </div>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>
+
+
+ 

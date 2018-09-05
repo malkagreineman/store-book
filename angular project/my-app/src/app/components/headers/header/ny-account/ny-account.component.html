@@ -1,0 +1,12 @@
+<div class="nav">
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+            <a routerLink="/myAccount/login" class="navlink" *ngIf="!user"> login </a>
+            <a routerLink="/myAccount/register" class="navlink"> register </a>
+            <button *ngIf="user" (click)="logout()">logout</button>
+        </div>
+    </div>
+</div>
+</div>
+<router-outlet></router-outlet>

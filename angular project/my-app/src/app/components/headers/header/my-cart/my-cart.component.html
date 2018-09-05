@@ -1,0 +1,8 @@
+<h1>My cart</h1>
+<div id="books">
+  <table>
+    <tr *ngFor="let book of cartBooks">
+    <app-cart-product [book]="book"></app-cart-product>
+    </tr>
+  </table>
+</div>
